@@ -13,7 +13,7 @@ Interactor Rails provides Rails support for the
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "interactor-rails", "~> 2.0"
+gem "interactor-rails", github: "fig/interactor-rails"
 ```
 
 Interactor Rails is compatible with Ruby 2.3, 2.4, or 2.5 on Rails 4.2, 5.0,
