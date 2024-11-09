@@ -8,7 +8,7 @@ module Interactor
     before do
       run_command_and_stop <<-CMD
         bundle exec rails new example \
-          --skip-yarn \
+          --skip-asset-pipeline \
           --skip-gemfile \
           --skip-git \
           --skip-keeps \
