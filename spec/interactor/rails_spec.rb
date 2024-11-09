@@ -8,25 +8,40 @@ module Interactor
     before do
       run_command_and_stop <<-CMD
         bundle exec rails new example \
+          --skip-action-cable \
+          --skip-action-mailbox \
+          --skip-action-mailer \
+          --skip-action-text \
+          --skip-active-job \
+          --skip-active-record \
+          --skip-active-storage \
           --skip-asset-pipeline \
+          --skip-bootsnap \
+          --skip-brakeman \
+          --skip-bundle \
+          --skip-ci \
+          --skip-coffee \
+          --skip-dev-gems \
+          --skip-docker \
           --skip-gemfile \
           --skip-git \
-          --skip-keeps \
-          --skip-action-mailer \
-          --skip-active-record \
-          --skip-puma \
-          --skip-action-cable \
-          --skip-sprockets \
-          --skip-spring \
-          --skip-listen \
-          --skip-coffee \
+          --skip-hotwire \
           --skip-javascript \
-          --skip-turbolinks \
-          --skip-test-unit \
-          --skip-test \
+          --skip-jbuilder \
+          --skip-kamal \
+          --skip-keeps \
+          --skip-listen \
+          --skip-puma \
+          --skip-rubocop \
+          --skip-solid \
+          --skip-spring \
+          --skip-sprockets \
           --skip-system-test \
-          --skip-bundle \
-          --skip-bootsnap \
+          --skip-test \
+          --skip-test-unit \
+          --skip-thruster \
+          --skip-turbolinks \
+          --skip-yarn \
           --quiet
         CMD
       cd "example"
